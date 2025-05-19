@@ -163,3 +163,9 @@ for(let i = 0; i < scrollMove.length; i++){
         animationMove(target)
     })
 }
+
+if (window.innerWidth > 768) {
+    skrollr.init({
+        forceHeight: false
+    });
+}
