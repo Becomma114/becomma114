@@ -26,7 +26,9 @@ $(document).ready(function () {
     });
 
     $playButton.on('click', function () {
+        $('body').css('overflow', 'auto');
         $introCover.hide();
+        $('body').removeClass('noscroll');
         $top20.show();
         $bot80.show();
         $video.show();
@@ -80,6 +82,7 @@ $(document).ready(function () {
         }, 1150);
     });
 
+    
 
     // 부들부들 랜덤 위글 효과 (li마다 독립적으로)
     $('.menu li').each(function () {
