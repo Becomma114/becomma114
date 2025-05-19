@@ -161,6 +161,9 @@
 }
 
 @media screen and (max-width : 768px){
+    .top20{
+        height: 10vh !important;
+    }
     header{
         height: 100vh;
     }
@@ -235,6 +238,9 @@
 }
 
 @media screen and (max-width : 425px){
+    .top20{
+        height: 10vh !important;
+    }
     header{
         height: 100vh;
     }
@@ -350,6 +356,9 @@
 
 
 @media screen and (max-width : 375px){
+    .top20{
+        height: 10vh !important;
+    }
     header{
         height: 100vh;
     }
