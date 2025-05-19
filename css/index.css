@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Godo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//fastly.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//fastly.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Godo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//fastly.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//fastly.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'KOHINanumOTFL';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHINanumOTFL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(20, 20, 20);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* display: none; */
+  }
+  .play-button {
+      width: 80px;
+      height: 80px;
+      background: rgb(235, 235, 235);
+      clip-path: polygon(20% 0%, 100% 50%, 20% 100%);
+    }
+    
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    display: block;
+}
+.top20{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    /* position: absolute; */
+    /* display: none; */
+}
+.topbar{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    transform-origin: left bottom;
+    transform: rotate(-135deg);
+}
+.topgit{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    transform: skew(35deg);
+}
+.topgit:nth-child(1){
+    right: 45%;
+}
+.topgit:nth-child(2){
+    right: 25%;
+}
+.topgit:nth-child(3){
+    right: 5%;
+}
+.botbar{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+}
+.botgit{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    transform: skew(-35deg);
+}
+.botgit:nth-child(1){
+    right: 45%;
+}
+.botgit:nth-child(2){
+    right: 25%;
+}
+.botgit:nth-child(3){
+    right: 5%;
+}
+.bot80{
+    width: 100%;
+    height: 100vh;
+    display: hide;
+}
+.bot80 video{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: 100%;
+    height: 20vh;
+    display: none;
+    position: relative;
+    top: 0; left: 0;
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    z-index: 20;
+}
+.logo{
+    width: 40%;
+    padding: 2vh 0;
+}
+.logo img{
+    height: 100%;
+    
+}
+.somenu{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0 0;
+    padding-right: 0%;
+}
+li{
+    font-size: 4rem;
+    width: 20%;
+    height: auto;
+    border-radius: 30px;
+    background-color: rgb(235, 235, 235);
+    color: rgb(20, 20, 20);
+    transition: all 0.3s ease;
+    font-family: 'GongGothicMedium';
+    padding: 1rem 0;
+}
+
+
+.main1{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+}
+.toptext {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgb(235, 235, 235);
+    font-family: 'GongGothicMedium';
+    transition: all 1s none;
+}
+
+
+.bottext{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: rgb(235, 235, 235);
+    line-height: 6vh;
+    font-family: 'KOHINanumOTFL';
+    word-spacing: -20px;
+    transition: all 1s none;
+}
+.main2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20,20,20);
+    padding: 10px;
+    overflow: hidden;
+}
+.main2 iframe:nth-child(1){
+    width: 100%;
+    height: 32%;
+}
+.main2 iframe:nth-child(2){
+    width: 100%;
+    height: 32%;
+    padding-top: 10px;
+}
+.main2 iframe:nth-child(3){
+    width: 100%;
+    height: 32%;
+    padding-top: 10px;
+}
+.main3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20,20,20);
+    padding: 10px;
+    overflow: hidden;
+}
+.main3 iframe:nth-child(1){
+    width: 100%;
+    height: 32%;
+    background-color: rgb(20, 20, 20);
+}
+.main3 iframe:nth-child(2){
+    width: 100%;
+    height: 32%;
+    padding-top: 10px;
+}
+.main3 iframe:nth-child(3){
+    width: 100%;
+    height: 32%;
+    padding-top: 10px;
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    padding: 100px 0 75px 150px; 
+}
+.flex1{
+    width: 50%;
+    height: 100%;
+    padding: 0 150px 0 0;
+    /* background-color: bisque; */
+}
+.flex1-1{
+    height: 50%;
+    display: flex;
+}
+.flex1-1 .box:nth-child(1){
+    height: 100%;
+    flex: 5 0 auto;
+    background: url(/images/증명사진.gif) no-repeat center/cover;
+}
+.flex1-1 .box:nth-child(2){
+    height: 100%;
+    flex: 6 0 auto;
+    /* background-color: rgb(136, 67, 67); */
+    position: relative;
+}
+h1{
+    padding: 0 25px 0 25px;
+    position: absolute;
+    bottom: 0;
+    font-size: 10rem;
+    font-family: 'Godo';
+    color: rgb(235, 235, 235);
+    white-space: nowrap;
+    
+}
+.flex1-2{
+    height: 50%;
+    /* background-color: rgb(194, 105, 21); */
+}
+.flex1-2 h3{
+    font-family: 'GongGothicMedium';
+    font-size: 2.5rem;
+    color: rgb(235, 235, 235);
+    padding: 75px 0 25px 0;
+}
+.flex1-2 p{
+    display: block;
+    font-family: 'KOHINanumOTFL';
+    font-size: 1.5rem;
+    color: rgb(225, 225, 225);
+    padding: 0 50px 0 0 ;
+    word-spacing: -0.6rem;
+}
+.flex2{
+    width: 50%;
+    height: 100%;
+    padding: 0 0 0 50px;
+    /* background-color: rgb(53, 53, 53); */
+}
+.flex2 .box:nth-child(2n+1){
+    height: 20%;
+    /* background-color: aquamarine; */
+}
+.flex2 .box:nth-child(2n){
+    height: 20%;
+    /* background-color: rgb(40, 70, 60); */
+}
+.flex2 .box:nth-child(5){
+    display: flex;
+}
+.flex2-1{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    flex: 1 0 auto;
+}
+.flex2-2{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(61, 61, 137); */
+    flex: 1 0 auto;
+}
+h3{
+    font-family: 'GongGothicMedium';
+    font-size: 2.5rem;
+    color: rgb(235, 235, 235);
+    padding: 0 0 25px 0;
+}
+p{
+    display: block;
+    font-family: 'KOHINanumOTFL';
+    font-size: 1.5rem;
+    color: rgb(225, 225, 225);;
+    padding: 0 0 0 0 ;
+    word-spacing: -0.6rem;
+}
+.flex2-2 h3{
+    padding: 0 0 24px 0;
+}
+.flex2-2-1{
+    width: 2.9rem;
+    height: 2.9rem;
+    display: flex;
+} 
+
+
+.menu.shrink {
+    height: auto;
+    display: flex;
+    position: fixed !important;
+    top: 0; left: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu.shrink .somenu {
+    width: 100%;
+}
+.menu.shrink ul {
+    width: 100%;
+}
+
+.menu.shrink li {
+    padding: 1vh 0;
+    font-size: 1rem;
+    background-color: transparent;
+    color: rgb(235, 235, 235);
+}
+
+.menu.shrink .logo {
+    display: none !important;
+}
+
+.menu.shrink .logo img {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
