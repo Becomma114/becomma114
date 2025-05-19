@@ -271,7 +271,7 @@
         height: 80vh;
     }
     .main1{
-        height: 120vh;
+        height: 100vh;
     }
     .toptext {
         top: 60%;
@@ -282,7 +282,7 @@
         word-spacing: -17px !important;
         line-height: 9vh !important;
         font-size: 1.2rem !important;
-        top: 56% !important;
+        top: 65% !important;
         left: 36.9% !important;
     }
 
@@ -400,7 +400,7 @@
         word-spacing: -17px !important;
         line-height: 9vh !important;
         font-size: 1.2rem !important;
-        top: 56% !important;
+        top: 65% !important;
         left: 35.3% !important;
     }
 
